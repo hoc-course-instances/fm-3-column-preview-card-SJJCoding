@@ -21,6 +21,10 @@
     div {
         padding: 10px;
     }
+
+    button:hover {
+        background-color: rgb(153, 153, 153);
+    }
     
     .sedans {
         background-color: var(--darkorange);
