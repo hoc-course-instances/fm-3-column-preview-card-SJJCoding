@@ -1,4 +1,11 @@
 
+    
+    :root {
+        --darkorange: #E28525;
+        --blue: #316A72;
+        --darkblue: #1C413F;
+    }
+    
     body {
         display: flex;
         font-family: Poppins;
@@ -8,6 +15,7 @@
     
     h1 {
         margin: 0px;
+        text-transform: uppercase;
     }
     
     div {
@@ -15,24 +23,59 @@
     }
     
     .sedans {
-        background-color: #E28525;
+        background-color: var(--darkorange);
         border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
     
     .suvs {
-        background-color: #316A72;
+        background-color: var(--blue);
     }
     
     .luxury {
-        background-color: #1C413F;
-        border-top-right-radius: 5px;
+        background-color: var(--darkblue);
+        border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
 
-@media screen and (min-width: 1200px) {
+    button {
+        display: block;
+        font-family: Poppins;
+        border-radius: 10px;
+        margin-top: 5px;
+        padding: 2px 5px;
+        border: none;
+    }
+
+    .sedans button {
+        color: var(--darkorange);
+    }
+
+    .suvs button {
+        color: var(--blue);
+    }
+
+    .luxury button {
+        color: var(--darkblue);
+    }
+
+    
+
+@media screen and (min-width: 600px) {
     body {
         flex-direction: row;
+    }
+
+    .sedans {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+    }
+
+    .luxury {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 0px;
     }
 }
 
