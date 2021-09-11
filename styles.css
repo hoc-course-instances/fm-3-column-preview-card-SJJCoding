@@ -1,0 +1,38 @@
+
+    body {
+        display: flex;
+        font-family: Poppins;
+        color: white;
+        flex-direction: column;
+    }
+    
+    h1 {
+        margin: 0px;
+    }
+    
+    div {
+        padding: 10px;
+    }
+    
+    .sedans {
+        background-color: #E28525;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    
+    .suvs {
+        background-color: #316A72;
+    }
+    
+    .luxury {
+        background-color: #1C413F;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+@media screen and (min-width: 1200px) {
+    body {
+        flex-direction: row;
+    }
+}
+
